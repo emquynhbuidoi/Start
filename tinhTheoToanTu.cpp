@@ -1,5 +1,4 @@
-#include <iostream>
-#include <math.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -18,18 +17,28 @@ int main()
     {
     case '+':
         total = numA + numB;
+        cout << numA << c << numB << " = " << total;
         break;
     case '-':
         total = numA - numB;
+        cout << numA << c << numB << " = " << total;
+        break;
     case '*':
         total = numA * numB;
+        cout << numA << c << numB << " = " << total;
+        break;
     case '/':
         total = numA / numB;
+        cout << numA << c << numB << " = " << total;
+        break;
     case '%':
         total = numA % numB;
+        cout << numA << c << numB << " = " << total;
+        break;
     default:
         cout << "You enter wrong";
         break;
-        cout << numA << c << numB << " = " << total;
     }
+
+    return 0;
 }
